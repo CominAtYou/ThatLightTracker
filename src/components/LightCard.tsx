@@ -11,7 +11,7 @@ export default function LightCard({ location, title, isCollected, imageUrl, yout
     return (
         <div className="flex flex-col dark:shadow-xl shadow-xl rgba(153,153,153,1)] gap-1.5 bg-white dark:bg-neutral-700 p-4 rounded-xl max-w-[16rem] select-none cursor-default">
             <div className="flex justify-center">
-                <img className="rounded-lg mb-2 w-[15rem] h-[8rem] object-cover" src={imageUrl} alt={`${title} ${youtubeUrl}`} />
+                <img className="rounded-lg mb-2 w-[15rem] h-[8rem] object-cover" src={imageUrl} alt={title} />
             </div>
             <div className="flex flex-col gap-2">
                 <span className="text-black/40 dark:text-white/40 uppercase font-semibold text-xs">{location}</span>
