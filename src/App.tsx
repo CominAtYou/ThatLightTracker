@@ -4,14 +4,10 @@ import RealmView from './components/RealmView';
 import realmMetadata from './data/RealmMetadata';
 import sampleRealmProgressData from './sampledata/SampleRealmProgressData';
 import RealmMetadata from './types/RealmMetadata';
-import { RealmProgressData } from './types/RealmProgressData';
-
-// import './App.css';
 
 export default function App() {
   const [selectedItem, setSelectedItem] = useState("");
   // TODO: Create default progress data
-  const [progressData, setProgressData] = useState(localStorage.getItem("progressData") ? JSON.parse(localStorage.getItem("progressData")!) as RealmProgressData : sampleRealmProgressData);
 
   function handleListItemClick(item: RealmMetadata) {
     document.title = `${item.name} • Light Tracker`;
@@ -20,7 +16,7 @@ export default function App() {
 
   return (
     <div className='flex flex-col h-full bg-neutral-200 dark:bg-neutral-900 transition duration-300'>
-      <nav className='flex p-3.5 items-center justify-center border-b-[1px] border-neutral-300 dark:border-neutral-800 bg-white/30 dark:bg-[rgb(30_30_30)] transition duration-300'>
+      <nav className='flex p-3.5 items-center justify-center border-b-[1px] border-neutral-300 dark:border-neutral-800 bg-[rgb(240_240_240)] dark:bg-[rgb(30_30_30)] transition duration-300'>
         <div className='flex items-center justify-center'>
             <span className='font-semibold select-none cursor-default dark:text-white transition duration-300'>Light Tracker</span>
             <svg className={`${selectedItem ? "" : "hidden"} opacity-30 dark:invert transition duration-300`} xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 348-636q-11-11-11-28t11-28q11-11 28-11t28 11l184 184q6 6 8.5 13t2.5 15q0 8-2.5 15t-8.5 13L404-268q-11 11-28 11t-28-11q-11-11-11-28t11-28l156-156Z" /></svg>

@@ -1,6 +1,6 @@
-import { RealmProgressData } from "../types/RealmProgressData";
+import UserProgressData from "../types/UserProgressData";
 
-const sampleRealmProgressData: { [k: string]: RealmProgressData } = {
+const sampleRealmProgressData: UserProgressData = {
     isle: {
         inProgress: [
             {

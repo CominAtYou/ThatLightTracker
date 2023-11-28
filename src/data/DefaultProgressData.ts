@@ -1,3 +1,3 @@
-export default {
-    
-}
+const defaultProgressData = {};
+
+export default defaultProgressData;
