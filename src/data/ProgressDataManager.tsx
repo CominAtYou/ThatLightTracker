@@ -3,10 +3,10 @@ import sampleRealmProgressData from "../sampledata/SampleRealmProgressData";
 import UserProgressData from "../types/UserProgressData";
 import { LightItemData } from "../types/RealmProgressData";
 
-type ReducerAction = { type: "MARK_COLLECTED" | "MARK_IN_PROGRESS", payload: { realm: string, id: number } };
+type ProgressDataReducerAction = { type: "MARK_COLLECTED" | "MARK_IN_PROGRESS", payload: { realm: string, id: number } };
 
 export const ProgressDataContext = createContext<UserProgressData>(null!);
-export const ProgressDataDispatchContext = createContext<React.Dispatch<ReducerAction>>(null!);
+export const ProgressDataDispatchContext = createContext<React.Dispatch<ProgressDataReducerAction>>(null!);
 
 /**
  * Removes an item from the source array, and inserts it into the target array, inserted at the correct position based on the id of the object.
@@ -34,7 +34,7 @@ function moveBetweenArrays(source: LightItemData[], target: LightItemData[], ele
     return [source, target];
 }
 
-function dataReducer(state: UserProgressData, action: ReducerAction) {
+function dataReducer(state: UserProgressData, action: ProgressDataReducerAction) {
     const inProgressArray = [...state[action.payload.realm].inProgress];
     const collectedArray = [...state[action.payload.realm].collected];
 
