@@ -1,0 +1,34 @@
+/* Open Runde - Regular */
+@font-face {
+    font-family: 'Open Runde';
+    src: url('https://fonts.cominatyou.com/open-runde/regular.woff2') format('woff2'),
+         url('https://fonts.cominatyou.com/open-runde/regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Open Runde - Medium */
+  @font-face {
+    font-family: 'Open Runde';
+    src: url('https://fonts.cominatyou.com/open-runde/medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  /* Open Runde - Semibold */
+  @font-face {
+    font-family: 'Open Runde';
+    src: url('https://fonts.cominatyou.com/open-runde/semibold.woff2') format('woff2'),
+         url('https://fonts.cominatyou.com/open-runde/semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  /* Open Runde - Bold */
+  @font-face {
+    font-family: 'Open Runde';
+    src: url('https://fonts.cominatyou.com/open-runde/bold.woff2') format('woff2'),
+         url('https://fonts.cominatyou.com/open-runde/bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
