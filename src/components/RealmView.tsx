@@ -16,7 +16,7 @@ export default function RealmView({ realmMetadata }: { realmMetadata: RealmMetad
           )
         })
       }
-      <hr className="mx-2 dark:border-neutral-800 border-neutral-300"></hr>
+      <hr className="mx-2 dark:border-neutral-800 border-neutral-300 transition-all duration-300"></hr>
       <RealmLocationCollapsable realmId={realmMetadata.id} locationName="Collected" lightItems={progressData[realmMetadata.id].collected} key={`${realmMetadata.id}-collected`} />
     </div>
   )
