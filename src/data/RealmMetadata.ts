@@ -14,19 +14,19 @@ export default [
   {
     name: "Hidden Forest",
     id: "forest",
-    locations: ["Forest Clearing", "Wind Paths", "Treehouse", "Brook", "Elevated Clearing", "Underground Cavern", "Tree Tunnels & Boneyard", "Forest End"],
+    locations: ["Forest Clearing", "Treehouse", "Brook", "Elevated Clearing", "Underground Cavern", "Tree Tunnels & Boneyard", "Forest End", "Wind Paths"],
     totalLight: 19
   },
   {
     name: "Valley of Triumph",
     id: "valley",
-    locations: ["Slope & Ice Rink", "Village of Dreams", "Sliding Race", "Citadel", "Flying Race", "Coliseum", "Valley Temple"],
+    locations: ["Slope & Ice Rink", "Sliding Race", "Citadel", "Flying Race", "Coliseum", "Valley Temple", "Village of Dreams"],
     totalLight: 17
   },
   {
     name: "Golden Wasteland",
     id: "wasteland",
-    locations: ["Treasure Reef", "Broken Temple", "Forgotten Ark", "Graveyard", "Crab Fields", "Battlefield", "Temple"],
+    locations: ["Broken Temple", "Forgotten Ark", "Graveyard", "Crab Fields", "Battlefield", "Temple", "Treasure Reef"],
     totalLight: 18
    },
   {
